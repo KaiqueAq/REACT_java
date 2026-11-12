@@ -1,0 +1,29 @@
+:host {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  color: #1f2937;
+  background: #f3f6fb;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  flex: 1;
+  align-items: flex-start;
+  align-self: center;
+  box-sizing: border-box;
+  padding: 2rem 1.5rem;
+}
+
+main router-outlet + * {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 1.25rem 1rem;
+  }
+}
