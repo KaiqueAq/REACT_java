@@ -1,0 +1,55 @@
+:root {
+  font-family: "Avenir Next", "Century Gothic", sans-serif;
+  color: #18181b;
+  background: #f7f6f2;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --paper: #f7f6f2;
+  --ink: #18181b;
+  --muted: #68665f;
+  --rule: #c9c6bb;
+  --wash: #eeece4;
+  --accent: #a53d27;
+  --display: "Avenir Next", "Century Gothic", sans-serif;
+  --mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--paper);
+}
+
+#root {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  color: var(--paper);
+  background: var(--accent);
+}

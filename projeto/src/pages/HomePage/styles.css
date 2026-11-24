@@ -1,0 +1,49 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100vh - 8.5rem);
+  padding: clamp(4rem, 11vw, 10rem) clamp(1.25rem, 9vw, 9rem);
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.home-page::before {
+  margin-bottom: 1.5rem;
+  color: var(--accent);
+  content: "01 / INÍCIO";
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.09em;
+}
+
+.home-page h1 {
+  max-width: 12ch;
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(4rem, 12vw, 10rem);
+  font-weight: 750;
+  line-height: 0.88;
+  letter-spacing: -0.085em;
+}
+
+.home-page > p {
+  max-width: 36rem;
+  margin: clamp(2rem, 5vw, 3.5rem) 0 0;
+  padding-left: 1rem;
+  border-left: 2px solid var(--accent);
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: clamp(0.82rem, 1.4vw, 1rem);
+  line-height: 1.8;
+}
+
+@media (max-width: 520px) {
+  .home-page {
+    min-height: calc(100vh - 10rem);
+  }
+
+  .home-page h1 {
+    font-size: clamp(3.75rem, 18vw, 6rem);
+  }
+}
